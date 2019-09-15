@@ -1,0 +1,278 @@
+header a {
+    margin-top: 15px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.bag {
+    margin-top: 15px;
+    margin-right: 15px;
+}
+
+.bag .fa-shopping-bag {
+    font-size: 32px;
+}
+
+#mobile-main {
+    width: auto;
+    text-align: center;
+    display: block;
+}
+
+#mobile-main h1 {
+    margin-top: 12px;
+    font-family: "OpenSans", Arial, sans-serif;
+    font-weight: normal;
+    color: #333333;
+}
+
+.mobile-top-menu {
+    padding-top: 15px;
+}
+
+.mobile-products-container {
+    max-width: 100%;
+}
+
+.mobile-top-menu button {
+    border: 1px solid #666;
+    background-color: #fff;
+    width: 40%;
+    height: 40px;
+    color: #666;
+}
+
+#mobile-order-modal {
+    position: fixed;
+    top: 0;
+    display: none;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+}
+
+#mobile-order-modal .title {
+    text-transform: uppercase;
+    font-family: "OpenSans", Arial, sans-serif;
+    font-size: 30px;
+    color: #666;
+    padding-top: 15px;
+    padding-left: 10px;
+}
+
+.mobile-order-options {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 25px;
+    font-size: 18px;
+    color: #000;
+    font-family: "OpenSans", Arial, sans-serif;
+}
+
+.mobile-order-options input {
+    list-style-type: none;
+    display: none;
+}
+
+.mobile-order-options label {
+    margin-bottom: 35px;
+}
+
+
+#mobile-filter-modal {
+    position: fixed;
+    top: 0;
+    display: none;
+    height:100%;
+    width:100%;
+    background-color: #fff;
+    overflow: scroll;
+}
+
+.fa-times {
+    margin-top: 15px;
+    margin-right: 15px;
+    font-size: 30px;
+}
+
+.fa-minus {
+    font-size: 30px;
+    display: none;
+}
+
+#mobile-filter-modal .title {
+    text-transform: uppercase;
+    font-family: "OpenSans", Arial, sans-serif;
+    font-size: 30px;
+    color: #666;
+    padding-top: 15px;
+    padding-left: 10px;
+}
+
+.mobile-filter-menu ul li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 25px;
+    max-height: 5px;
+    padding-bottom: 20px;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: "OpenSans", Arial, sans-serif;
+}
+
+#mobile-price-filter {
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: #000;
+}
+
+#mobile-price-filter li {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    font-size: 16px;
+    text-transform: none;
+}
+
+#mobile-price-filter input {
+    display: none;
+}
+
+#mobile-price-filter label::before {
+    content: "";
+    display: inline-block;
+    box-sizing: border-box;
+    width: 19px;
+    height: 19px;
+    border: 1px solid #000;
+    margin-right: 10px;
+}
+
+#mobile-price-filter label::after {
+    content: "";
+    position: absolute;
+    left: 25px;
+    margin: 3px;
+    box-sizing: border-box;
+    width: 13px;
+    height: 13px;
+    background-color: #00BFF3;
+    display: none;
+}
+
+#mobile-price-filter input:checked ~ label::after {
+    display: inline-block;
+}
+
+#mobile-size-filter {
+    display: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: #666;
+    margin-bottom: 15%;
+}
+
+#mobile-size-filter input {
+    display: none;
+}
+
+#mobile-size-filter label {
+    content: "";
+    display: inline-block;
+    box-sizing: border-box;
+    width: max-content;
+    height: max-content;
+    border: 1px solid #666;
+    padding: 15px;
+}
+
+#mobile-size-filter input:checked ~ label {
+    color: #000;
+    border: 1px solid #00BFF3;
+}
+
+#mobile-color-filter {
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: #000;
+}
+
+#mobile-color-filter li {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+#mobile-color-filter input {
+    display: none;
+}
+
+#mobile-color-filter label::before {
+    content: "";
+    display: inline-block;
+    box-sizing: border-box;
+    width: 19px;
+    height: 19px;
+    border: 1px solid #000;
+    margin-right: 10px;
+}
+
+#mobile-color-filter label::after {
+    content: "";
+    position: absolute;
+    left: 25px;
+    margin: 3px;
+    box-sizing: border-box;
+    width: 13px;
+    height: 13px;
+    background-color: #00BFF3;
+    display: none;
+}
+
+#mobile-color-filter input:checked ~ label::after {
+    display: inline-block;
+}
+
+#mobile-filter-buttons {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    justify-content: center;
+    width: 100%;
+}
+
+#mob-applyfilter, #mob-clearfilter {
+    width: 40%;
+    margin: 10px;
+    height: 50px;
+    text-transform: uppercase;
+    font-size: 22px;
+}
+
+#mob-applyfilter {
+    border: none;
+    background-color: #00BFF3;
+    color: #fff;
+}
+
+#mob-clearfilter {
+    border: 1px solid #666;
+    color: #666;
+    background-color: #fff;
+}
+
+.side-menu, .side-menu-header {
+    display: none;
+}
+
+#size-filter-form {
+    display: inherit;
+    flex-wrap: wrap;
+}

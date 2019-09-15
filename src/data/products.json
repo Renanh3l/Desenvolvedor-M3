@@ -1,0 +1,186 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "Camiseta Mescla",
+            "price": 28,
+            "sizes": [
+                "M",
+                "G",
+                "36",
+                "38"
+            ],
+            "img": "../images/img_2.png",
+            "miniDesc": "até 3x de R$9,33",
+            "colors": [
+                "Cinza",
+                "Preto",
+                "Branco"
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Saia em Couro",
+            "price": 398,
+            "sizes": [
+                "M",
+                "P",
+                "36"
+            ],
+            "img": "../images/img_3.png",
+            "miniDesc": "até 5x de R$30,00",
+            "colors": [
+                "Laranja",
+                "Vermelho",
+                "Preto"
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Cardigan Tigre",
+            "price": 398,
+            "sizes": [
+                "U",
+                "M",
+                "P"
+            ],
+            "img": "../images/img_4.png",
+            "miniDesc": "até 3x de R$9,33",
+            "colors": [
+                "Laranja",
+                "Preto",
+                "Branco"
+            ]
+        },
+        {
+            "id": 4,
+            "name": "Cardigan Off White",
+            "price": 99.90,
+            "sizes": [
+                "M",
+                "P",
+                "G"
+            ],
+            "img": "../images/img_5.png",
+            "miniDesc": "até 5x de R$30,00",
+            "colors": [
+                "Branco"
+            ]
+        },
+        {
+            "id": 5,
+            "name": "Body Leopardo",
+            "price": 129.90,
+            "sizes": [
+                "P"
+            ],
+            "img": "../images/img_6.png",
+            "miniDesc": "até 5x de R$30,00",
+            "colors": [
+                "Laranja",
+                "Rosa"
+            ]
+        },
+        {
+            "id": 6,
+            "name": "Casaco Pelos",
+            "price": 398,
+            "sizes": [
+                "M",
+                "42"
+            ],
+            "img": "../images/img_7.png",
+            "miniDesc": "até 5x de R$30,00",
+            "colors": [
+                "Vermelho",
+                "Laranja"
+            ]
+        },
+        {
+            "id": 7,
+            "name": "Cropped Stripes",
+            "price": 120,
+            "sizes": [
+                "M",
+                "P",
+                "G",
+                "46",
+                "44"
+            ],
+            "img": "../images/img_8.png",
+            "miniDesc": "até 5x de R$30,00",
+            "colors": [
+                "Verde",
+                "Laranja",
+                "Azul",
+                "Vermelho",
+                "Amarelo"
+            ]
+        },
+        {
+            "id": 8,
+            "name": "Camisa Transparente",
+            "price": 398,
+            "sizes": [
+                "M",
+                "P",
+                "G"
+            ],
+            "img": "../images/img_9.png",
+            "miniDesc": "até 5x de R$30,00",
+            "colors": [
+                "Preto",
+                "Branco"
+            ]
+        },
+        {
+            "id": 9,
+            "name": "Pochete Clutch",
+            "price": 99,
+            "sizes": [
+                "M",
+                "P",
+                "G"
+            ],
+            "img": "../images/img_10.png",
+            "miniDesc": "até 5x de R$30,00",
+            "colors": [
+                "Preto"
+            ]
+        },
+        {
+            "id": 10,
+            "name": "Casaco Pelos",
+            "price": 398,
+            "sizes": [
+                "M",
+                "P",
+                "G"
+            ],
+            "img": "../images/img_7.png",
+            "miniDesc": "até 5x de R$30,00",
+            "colors": [
+                "Vermelho",
+                "Laranja",
+                "Amarelo"
+            ]
+        },
+        {
+            "id": 11,
+            "name": "Casaco Pelos",
+            "price": 398,
+            "sizes": [
+                "M",
+                "P",
+                "G"
+            ],
+            "img": "../images/img_7.png",
+            "miniDesc": "até 5x de R$30,00",
+            "colors": [
+                "Vermelho",
+                "Laranja"
+            ]
+        }
+    ]
+
+}
