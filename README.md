@@ -61,7 +61,6 @@ O layout se encontra na pasta "layout" em PSD e PNG.
 - Grunt, Gulp ou similar
 
 ##### Dúvidas: [davi@digitalm3.com.br](mailto:davi@digitalm3.com.br?subject=Dúvida%20Vaga%20DEV%20-%20Digital%20M3).
-<<<<<<< HEAD
 
 ### Instruções de Execução
 
@@ -70,5 +69,5 @@ O layout se encontra na pasta "layout" em PSD e PNG.
 - Digite "npm install" e aguarde instalação das depêndencias
 - Digite "npm run dev"
 - Abra o endereço localhost:3000 no navegador.
-=======
->>>>>>> 132b2f8c5ffdc746b953d4ff7ce4b47f145ff635
+
+Email para contato: nan.pp@hotmail.com
