@@ -84,6 +84,7 @@ footer {
 
 .mobile-product {
     font-family: "OpenSans", Arial, sans-serif;
+    flex: 1 1 30%;
 }
 
 .mob-product {
@@ -128,8 +129,4 @@ footer {
 
 #mobile-filter-modal {
     display: none;
-}
-
-.mobile-product {
-    flex: 0 1 30%;
 }

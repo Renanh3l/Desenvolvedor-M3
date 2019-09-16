@@ -69,7 +69,7 @@ async function loadMoreProducts() {
         };
 
     } catch (e) {
-        console.log(e);
+        console.log("Erro ao carregar produtos: " + e);
     }
 }
 

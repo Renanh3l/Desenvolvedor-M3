@@ -10,20 +10,16 @@ async function getFilteredProducts(colorFilters, sizeFilters, priceFilters) {
         }
 
         let fetchString = api_url;
-        fetchString += "/products/?"
+        fetchString += "/products?"
 
+        // Filtrar por cores
         for (let i=0; i < colorFilters.length; i++) {
             fetchString += `colors_like=${colorFilters[i]}&`
         }
 
+        // Filtrar por tamanhos
         for (let i=0; i < sizeFilters.length; i++) {
             fetchString += `sizes_like=${sizeFilters[i]}&`
-        }
-
-        if (priceFilters.length > 0) {
-            for (let i=0; i < priceFilters.length - 1; i+=2) {
-                fetchString += `price_gte=${priceFilters[i]}&price_lte=${priceFilters[i+1]}&`
-            }
         }
 
         const response = await fetch(fetchString, {
@@ -31,14 +27,25 @@ async function getFilteredProducts(colorFilters, sizeFilters, priceFilters) {
         });
         
         products = await response.json();
+
+        // Filtrar por preços
+        if (priceFilters.length > 0) {
+            products = products.filter((product) => {
+                for (let x=0; x < priceFilters.length - 1; x+=2) {
+                    if (product.price >= priceFilters[x] && product.price <= priceFilters[x+1]) {
+                        return true;
+                    }
+                }
+            })
+        }
+
         currentIndex = 6;
 
         clearProductRendering(); // Limpa os produtos que estavam renderizados
         renderProducts(); // Renderiza os produtos filtrados
         toggleMobileFilterModal(); // Fecha o modal que estava aberto
-
     } catch(e) {
-        console.log(e);
+        console.log("Erro ao filtrar produtos: " + e);
     }
 }
 
@@ -73,23 +80,23 @@ function applyFilters() {
         if (inputs[i].checked) {
             switch (inputs[i].name) {
                 case "pricefilter1": 
-                    priceFilters.push(0, 50);
+                    priceFilters.push(0.00, 50.00);
                     break;
 
                 case "pricefilter2": 
-                    priceFilters.push(51, 150)
+                    priceFilters.push(51.00, 150.00)
                     break;
 
                 case "pricefilter3":
-                    priceFilters.push(151, 300)
+                    priceFilters.push(151.00, 300.00)
                     break;
 
                 case "pricefilter4":
-                    priceFilters.push(301, 500)
+                    priceFilters.push(301.00, 500.00)
                     break;
 
                 case "pricefilter5":
-                    priceFilters.push(500, 999)
+                    priceFilters.push(500.00, 999.00)
                     break;
                 
                 default:
