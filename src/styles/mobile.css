@@ -34,6 +34,10 @@ header a {
     max-width: 100%;
 }
 
+.mobile-product {
+    flex: 0 1 30%;
+}
+
 .mobile-top-menu button {
     border: 1px solid #666;
     background-color: #fff;
