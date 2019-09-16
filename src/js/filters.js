@@ -164,21 +164,21 @@ function setupFilterButtons() {
 
     // Varremos os checkboxs (Filtro de Cores)
     for (let i = 0; i < inputs.length; i++) {
-        inputs[i].addEventListener('change', applyFilters);
+        if (inputs[i].getAttribute("mobile") !== "1") inputs[i].addEventListener('change', applyFilters);
     }
 
     inputs = document.getElementsByClassName("size-input");
 
     // Varremos os checkboxs (Filtro de Tamanhos)
     for (let i = 0; i < inputs.length; i++) {
-        inputs[i].addEventListener('change', applyFilters);
+        if (inputs[i].getAttribute("mobile") !== "1") inputs[i].addEventListener('change', applyFilters);
     }
 
     inputs = document.getElementsByClassName("price-input");
 
     // Varremos os checkboxs marcados (Filtro de Tamanhos)
     for (let i = 0; i < inputs.length; i++) {
-        inputs[i].addEventListener('change', applyFilters);
+        if (inputs[i].getAttribute("mobile") !== "1") inputs[i].addEventListener('change', applyFilters);
     }
 }
 

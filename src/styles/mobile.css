@@ -173,7 +173,7 @@ header a {
     flex-wrap: wrap;
     justify-content: center;
     color: #666;
-    margin-bottom: 15%;
+    margin-bottom: 25px;
 }
 
 #mobile-size-filter input {
@@ -182,10 +182,12 @@ header a {
 
 #mobile-size-filter label {
     content: "";
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     box-sizing: border-box;
-    width: max-content;
-    height: max-content;
+    width: 45px;
+    height: 45px;
     border: 1px solid #666;
     padding: 15px;
 }
@@ -272,7 +274,7 @@ header a {
     display: none;
 }
 
-#size-filter-form {
+#mob-size-filter-form {
     display: inherit;
     flex-wrap: wrap;
 }
