@@ -1,3 +1,8 @@
+<p align="center">
+  <img width=550 src="https://i.imgur.com/9ka9ig6.png" />
+  <img height=550 src="https://i.imgur.com/Jtgqs2a.png" />
+</p>
+
 ### Instruções de Execução
 
 - Faça um clone do repositório
